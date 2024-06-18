@@ -1,0 +1,1347 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --bs-color1: #EC4445;
+    --bs-color2: #FFFFFF;
+    --bs-color3: #000000;
+    --bs-color4: #0099E5;
+    --bs-color5: #F5F5F5;
+}
+.container{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Header Start */
+header{
+    width: 100%;
+    padding: 0px 12px 2px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+}
+header .logo{
+    border: 1px solid var(--bs-color1);
+    padding: 2px 5px;
+    margin: 0px 0px 50px 0px;
+    background: var(--bs-color1);
+}
+header .logo h1 a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--bs-color2);
+}
+header .fa-shopping-bag{
+    color: var(--bs-color2);
+    font-size: 24px;
+    margin: 0px 0px 10px -65px;
+    transform: rotate(-35deg);
+}
+header .navigation nav{
+    display: none;
+}
+header .navigation nav ul{
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+header .navigation nav ul li{
+    padding: 10px 0px;
+}
+header .navigation nav ul li a{
+    text-decoration: none;
+    color: var(--bs-color2);
+    transition: 1s;
+}
+header .navigation nav ul li a:hover{
+    color: var(--bs-color1);
+}
+header .icons nav{
+    margin: 0px 0px 0px -280px;
+}
+header .icons nav ul{
+    display: flex;
+    margin: 80px 0px 12px 40px;
+}
+header .icons nav ul li{
+    list-style: none;
+    border: 1px solid #363636;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 5px 6px;
+    margin: 3px;
+    background: #363636;
+}
+header .icons nav ul li:hover{
+    background: var(--bs-color1);
+}
+header .icons nav ul li a{
+    color: var(--bs-color2);
+}
+header .barIcon a .fa-bars{
+    border: 1px solid var(--bs-color2);
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--bs-color2);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    padding: 6px 12px; 
+    margin: 0px 0px 50px -45px;
+}
+header .barIcon a .fa-bars:hover{
+    color: var(--bs-color6);
+    background-color: var(--bs-color2);
+}
+/* Header End */
+
+/* Main Start */
+/* Hero Start */
+.hero{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../Images/backgrounds/bg1.jpg) center;
+    background-size: cover;
+    padding: 160px 15px 80px 15px;
+}
+.hero h2{
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--bs-color2);
+}
+.hero h2 span{
+    font-size: 28px;
+    font-weight: bolder;
+    color: var(--bs-color1);
+}
+.hero p{
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--bs-color2);
+    line-height: 2;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 12px 0px;
+}
+.hero button{
+    color: var(--bs-color2);
+    background: var(--bs-color4);
+    border: var(--bs-color4);
+    font-size: 16px;
+    padding: 10px 30px;
+}
+.hero button:hover{
+    background: var(--bs-color1);
+}
+/* Hero End */
+
+/* About Start */
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 30px 0px 30px;
+}
+.about .leftAbout{
+    text-align: center;
+}
+.about .leftAbout h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--bs-color3);
+    letter-spacing: 3px;
+}
+.about .leftAbout h3{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 40px 0px 10px 0px;
+    color: var(--bs-color1);
+}
+.about .leftAbout p{
+    font-size: 16px;
+    color: var(--bs-color6);
+    line-height: 1.8;
+    margin: 0px 0px 20px 0px;
+}
+.about .leftAbout button{
+    color: var(--bs-color2);
+    background: var(--bs-color4);
+    border: var(--bs-color4);
+    font-size: 16px;
+    padding: 10px 30px;
+    margin: 5px 0px 40px 0px;
+}
+.about .leftAbout button:hover{
+    background: var(--bs-color3);
+}
+.about .rightAbout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0px 15px;
+}
+.about .rightAbout .fig1{
+    margin: 0px 0px 30px 0px;
+    position: relative;
+}
+.about .rightAbout .fig1 img{
+    width: 100%;
+    position: relative;
+}
+.about .rightAbout .fig1 figcaption{
+    position: absolute;
+    top: 40px;
+    left: 45px;
+}
+.about .rightAbout .fig1 figcaption h4{
+    font-size: 24px;
+    font-weight: bold;
+    word-spacing: 6px;
+    color: #f02b2b;
+}
+.about .rightAbout .fig1 figcaption h4 span{
+    color: var(--bs-color2);
+}
+.effect1 {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000000;
+}
+.effect1 *,
+.effect1 *:before,
+.effect1 *:after {
+    box-sizing: border-box;
+    transition: all 0.55s ease;
+}
+.effect1 img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+}
+.effect1 figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 5px 10px 10px;
+    opacity: 0;
+    transform: rotate(45deg) translate(40%, -60%);
+    transform-origin: 0 0;
+}
+.effect1 figcaption:before,
+.effect1 figcaption:after {
+    height: 2px;
+    width: 400px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+}
+.effect1 figcaption:before {
+    top: 0;
+    left: 10px;
+    transform: translateX(100%);
+}
+.effect1 figcaption:after {
+    bottom: 0;
+    right: 10px;
+    transform: translateX(-100%);
+}
+.effect1 figcaption div:before,
+.effect1 figcaption div:after {
+    width: 2px;
+    height: 300px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+}
+.effect1 figcaption div:before {
+    top: 10px;
+    right: 0;
+    transform: translateY(100%);
+}
+.effect1 figcaption div:after {
+    bottom: 10px;
+    left: 0;
+    transform: translateY(-100%);
+}
+.effect1 h2,
+.effect1 h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+.effect1 h2 {
+    font-weight: 400;
+}
+.effect1 h4 {
+    display: block;
+    font-weight: 700;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    color: #000000;
+}
+.effect1:hover img,
+.effect1.hover img {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+.effect1:hover figcaption,
+.effect1.hover figcaption {
+    opacity: 1;
+}
+.effect1:hover figcaption:before,
+.effect1.hover figcaption:before,
+.effect1:hover figcaption:after,
+.effect1.hover figcaption:after,
+.effect1:hover figcaption div:before,
+.effect1.hover figcaption div:before,
+.effect1:hover figcaption div:after,
+.effect1.hover figcaption div:after {
+    transform: translate(0, 0);
+}
+.effect1:hover figcaption:before,
+.effect1.hover figcaption:before,
+.effect1:hover figcaption:after,
+.effect1.hover figcaption:after {
+    transition-delay: 0.15s;
+}
+/* About End */
+
+/* Services Start */
+.services{
+    padding: 30px 30px 10px 30px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../Images/backgrounds/bg2.jpg) center;
+    background-size: cover;
+}
+.services .leftServices{
+    text-align: center;
+}
+.services .leftServices h2{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--bs-color2);
+}
+.services .leftServices h3{
+    font-size: 15px;
+    font-weight: lighter;
+    word-spacing: 2px;
+    color: var(--bs-color2);
+    margin: 30px 0px 20px 0px;
+}
+.services .leftServices p{
+    font-size: 14.8px;
+    font-weight: 200;
+    color: var(--bs-color2);
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+.services .rightServices .rs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.services .rightServices .rs div{
+    padding: 15px 12px 15px 0px;
+}
+.services .rightServices .rs div i{
+    color: var(--bs-color1);
+    font-size: 24px;
+    line-height: 2.7;
+}
+.services .rightServices .rs div h4{
+    color: var(--bs-color2);
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+/* Services End */
+
+/* Models Start */
+.models{
+    text-align: center;
+    padding: 40px;
+}
+.models .topModels{
+    margin: 0px 0px 20px 0px;
+}
+.models .topModels h2{
+    font-size: 30px;
+    letter-spacing: 3.3px;
+    font-weight: bolder;
+    color: var(--bs-color3);
+}
+.models .bottomModels{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.models .bottomModels div{
+    border: 1px solid var(--bs-color4);
+    width: 88%;
+    background: var(--bs-color4);
+    margin: 15px 0px;
+}
+.models .bottomModels div img{
+    width: 100%;
+    border: 1px solid var(--bs-color4);
+    padding: 7px 14px;
+}
+.models .bottomModels div h3{
+    font-size: 16px;
+    color: var(--bs-color2);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.models .bottomModels div ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.models .bottomModels div ul li{
+    border: 2px solid var(--bs-color2);
+    margin: 20px 2px;
+    padding: 5px 8px;
+    color: var(--bs-color2);
+}
+.models .bottomModels div ul li a{
+    color: var(--bs-color2);
+}
+.models .bottomModels div ul li:hover{
+    background: var(--bs-color1);
+}
+/* Models End */
+
+/* Portfolio Start */
+.portfolio{
+    text-align: center;
+    padding: 38px 20px 20px 20px
+}
+.portfolio .topPortfolio{
+    margin: 0px 0px 20px 0px;
+}
+.portfolio .topPortfolio h2{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: var(--bs-color3);
+}
+.portfolio .bottomPortfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 0px 0px 0px;
+}
+.portfolio .bottomPortfolio div img{
+    width: 100%;
+    margin: 4px 0px 0px 0px;
+    border: 5px solid var(--bs-color5);
+}
+.effect2 {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    min-width: 230px;
+    max-width: 315px;
+    max-height: 230px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+.effect2 * {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+.effect2 img {
+    opacity: 1;
+    width: 100%;
+}
+.effect2:after,
+.effect2:before,
+.effect2 figcaption:after,
+.effect2 figcaption:before {
+    background: var(--bs-color1);
+    width: 25%;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    transition: all 0.3s steps(4);
+    z-index: 1;
+    bottom: 100%;
+    top: 0%;
+}
+.effect2:before {
+    left: 0;
+    transition-delay: 0;
+}
+.effect2:after {
+    left: 25%;
+    transition-delay: 0.1s;
+}
+.effect2 figcaption:before {
+    left: 50%;
+    transition-delay: 0.2s;
+    z-index: -1;
+}
+.effect2 figcaption:after {
+    left: 75%;
+    transition-delay: 0.3s;
+    z-index: -1;
+}
+.effect2 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 30px;
+}
+.effect2 h2 {
+    margin: 60px 0px 0px 0px;
+    width: 100%;
+    opacity: 0;
+}
+.effect2 h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.effect2:hover:after,
+.effect2.hover:after,
+.effect2:hover:before,
+.effect2.hover:before,
+.effect2:hover figcaption:after,
+.effect2.hover figcaption:after,
+.effect2:hover figcaption:before,
+.effect2.hover figcaption:before {
+    bottom: 0;
+    opacity: 0.8;
+}
+.effect2:hover figcaption h2,
+.effect2.hover figcaption h2{
+    transition-delay: 0.4s;
+}
+.effect2:hover figcaption h2,
+.effect2.hover figcaption h2{
+    opacity: 1;
+}
+/* Portfolio End */
+
+/* Testimonials Start */
+.testimonials{
+    text-align: center;
+    padding: 40px 15px 15px 15px;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../Images/backgrounds/bg3.jpg) center;
+    background-size: cover;
+}
+.testimonials .topTestimonials{
+    margin: 0px 0px 20px 0px;
+}
+.testimonials .topTestimonials h2{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: var(--bs-color2);
+}
+.testimonials .bottomTestimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(236, 68, 69, 0.35);
+    margin: 40px 0px 0px 0px;
+    padding: 35px 45px 45px 45px;
+}
+.testimonials .bottomTestimonials .rt{
+    width: 55%;
+    margin: 0px 12px;
+}
+.testimonials .bottomTestimonials .rt img{
+    width: 100%;
+}
+.testimonials .bottomTestimonials .lt{
+    text-align: start;
+    line-height: 2;
+    margin: 0px 0px 0px -14px;
+}
+.testimonials .bottomTestimonials .lt h3{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--bs-color2);
+}
+.testimonials .bottomTestimonials .lt h4{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--bs-color1);
+}
+.testimonials .bottomTestimonials .lt p{
+    font-size: 14.8px;
+    line-height: 1.7;
+    color: rgba(239, 238, 238, 0.89);
+}
+/* Testimonials End*/
+
+/* Contact Start */
+.contact{
+    text-align: center;
+}
+.contact .topContact{
+    margin: 40px 0px 40px 0px;
+}
+.contact .topContact h2{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: var(--bs-color3);
+}
+.contact .bottomContact .rc{
+    width: 45%;
+    margin: 0px 0px 0px 60px;
+}
+.contact .bottomContact .rc ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+.contact .bottomContact .rc ul li{
+    width: 30%;
+    margin: 0px 0px 0px 4px;
+}
+.contact .bottomContact .rc ul li img{
+    width: 100%;
+    border: 2px solid var(--bs-color1);
+}
+.contact .bottomContact .lc form{
+    padding: 15px;
+}
+.contact .bottomContact .lc form .lc1 input{
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    margin: 0px 0px 14px 0px;
+    padding: 12px 30px 12px 10px;
+    background: var(--bs-color5);
+}
+.contact .bottomContact .lc form .lc2 textarea{
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    margin: 0px 0px 14px 0px;
+    padding: 12px 30px 12px 10px;
+    background: var(--bs-color5);
+}
+.contact .bottomContact .lc form .lc3 input{
+    color: var(--bs-color2);
+    background: var(--bs-color4);
+    border: var(--bs-color4);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px 14px 14px 14px;
+    padding: 12px 20px 12px 20px;
+}
+.contact .bottomContact .lc form .lc3 input:hover{
+    background: var(--bs-color3);
+}
+/* Contact End*/
+
+/* Map Start */
+.map{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.map iframe{
+    width: 100%;
+    height: 300px;
+}
+.map .leftMap{
+    padding: 60px 30px 60px 40px;
+}
+.map .leftMap h3{
+    font-size: 28px;
+}
+.map .leftMap form input[type="email"]{
+    border: 1px solid var(--bs-color3);
+    padding: 14px 48px 14px 10px;
+    margin: 20px 0px;
+    color: var(--bs-color3);
+    font-weight: 600;
+}
+.map .leftMap form input[type="submit"]{
+    padding: 12px 76.5px;
+    background: var(--bs-color1);
+    color: var(--bs-color2);
+    font-size: 18px;
+    border: 1px solid var(--bs-color1);
+}
+.map .leftMap form input[type="submit"]:hover{
+    background: var(--bs-color3);
+}
+.map .rightMap{
+    padding: 0px 40px 20px 65px;
+}
+.map .rightMap h3{
+    font-size: 28px;
+    margin: 0px 0px 30px 0px;
+}
+.map .rightMap p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
+    color: #333333;
+}
+.map .rightMap p a{
+    text-decoration: none;
+    color: #0085a0;
+}
+.map .rightMap p a:hover{
+    color: var(--bs-color3);
+}
+/* Map End*/
+/* Main End */
+
+/* Footer Start */
+footer{
+    text-align: center;
+}
+footer .topFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--bs-color4);
+    padding: 40px 50px 30px 50px;
+}
+footer .topFooter .leftFooter h2{
+    font-size: 30px;
+}
+footer .topFooter .leftFooter h2 a{
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--bs-color2);
+}
+footer .topFooter .rightFooter ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 20px 0px 0px 0px;
+}
+footer .topFooter .rightFooter ul li{
+    padding: 0px 2px 10px 4px;
+}
+footer .topFooter .rightFooter ul li a{
+    color: var(--bs-color2);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+footer .topFooter .rightFooter ul li a:hover{
+    color: var(--bs-color1);
+}
+footer .bottomFooter{
+    color: var(--bs-color2);
+    background: var(--bs-color3);
+    padding: 10px 20px;
+}
+footer .bottomFooter p{
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+footer .bottomFooter p span a{
+    color: var(--bs-color2);
+    text-decoration: none;
+}
+footer .bottomFooter p span a:hover{
+    text-decoration: underline;
+    color: var(--bs-color1);
+}
+/* Footer End*/
+
+@media only screen and (min-width:768px){
+    header{
+        padding: 0px 0px 0px 25px;
+    }   
+    header .navigation{
+        margin: 0px 80px 0px -68px;
+    }
+    header .navigation nav{
+        display: block;
+    }
+    header .navigation nav ul{
+        display: flex;
+    }
+    header .navigation nav ul li{
+        margin: 80px 15px 0px 10px;
+    }
+    header .icons nav ul{
+        margin: 0px 0px 40px 0px;
+    }
+    header .barIcon a .fa-bars{
+        display: none;
+    }
+    header .fa-shopping-bag{
+        font-size: 35px;
+        margin: 10px 0px 12px -32px;
+        transform: rotate(-45deg);
+    }
+    header .logo{
+        padding: 5px 5px 2px 5px;
+        margin: 15px 0px 60px 0px;
+    }
+    header .logo h1 a{
+        font-size: 36px;
+    }
+    header .icons nav ul {
+        margin: 0px 0px 40px 105px;
+    }
+    header .icons nav ul li{
+        margin: 5px;        
+    }
+    .hero{
+        padding: 250px 15px 100px 15px;
+    }
+    .hero h2{
+        font-size: 32px;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .hero h2 span{
+        font-size: 58px;
+        font-weight: 800;
+    }
+    .hero p{
+        font-size: 14px;
+        text-align: center;
+        margin: 12px 30px;
+        letter-spacing: 3px;
+    }
+    .about{
+        padding: 100px 20px 5px 0px;
+    }
+    .about .leftAbout{
+        padding: 0px 10px 0px 25px;
+    }
+    .about .leftAbout h2, .models .topModels h2, .portfolio .topPortfolio h2, .testimonials .topTestimonials h2, .contact .topContact h2{
+        font-size: 44px;
+    }
+    .about .leftAbout h3{
+        font-size: 22px;
+    }
+    .about .leftAbout button {
+        margin: 5px 0px 70px 0px;
+    }
+    .about .rightAbout{
+        margin: 0px 20px 0px 0px;
+    }
+    .about .rightAbout .fig1{
+        margin: 0px 0px 30px 30px;
+    }
+    .about .rightAbout .fig1 figcaption {
+        top: 130px;
+        left: 50px;
+    }
+    .about .rightAbout .fig1 figcaption h4{
+        font-size: 32px;
+    }
+    .services{
+        padding: 60px 30px;
+    }
+    .services .leftServices{
+        width: 49%;
+        margin: 0px 0px 100px 0px;
+    }
+    .services .leftServices h2{
+        font-size: 36px;
+    }
+    .services .leftServices h3{
+        letter-spacing: 1px;
+        font-size: 17px;
+    }
+    .services .leftServices p{
+        font-size: 16px;       
+    }
+    .services .rightServices{
+        width: 38%;
+    }
+    .services .rightServices .rs div{
+        padding: 15px 5px 15px 0px;
+    }
+    .services .rightServices .rs div i{
+        font-size: 48px;
+        line-height: 2;
+    }
+    .services .rightServices .rs div h4{
+        font-size: 17px;
+    }
+    .models {
+        padding: 80px 10px;
+    }
+    .models .bottomModels div{
+        width: 30%;
+    }
+    .models .bottomModels div h3{
+        font-size: 24px;
+    }
+    .portfolio{
+        padding: 38px 20px 50px 20px;
+    }
+    .portfolio .bottomPortfolio div{
+        width: 32%;
+    }
+    .testimonials{
+        padding: 62px 15px 80px 15px;
+    }
+    .testimonials .bottomTestimonials{
+        margin: 60px 5px 0px 5px;
+        padding: 50px 45px 130px 45px;
+    }
+    .testimonials .bottomTestimonials .rt{
+        width: 22%;
+    }
+    .testimonials .bottomTestimonials .lt{
+       width: 73.5%;
+       margin: 0px 0px -90px 0px;
+       padding: 0px 50px 0px 0px;
+    }
+    .testimonials .bottomTestimonials .lt h3{
+        font-size: 25px;
+    }
+    .testimonials .bottomTestimonials .lt h4{
+        font-size: 16px;
+    }
+    .testimonials .bottomTestimonials .lt p{
+        font-size: 16px;
+    }
+    .contact {
+        padding: 40px 0px 0px 0px;
+    }
+    .contact .bottomContact .rc {
+        margin: 0px 0px 0px 250px;
+    }
+    .contact .bottomContact .rc ul li {
+        width: 24%;
+    }
+    .contact .bottomContact .lc{
+        padding: 0px 0px 20px 0px;
+    }
+    .contact .bottomContact .lc form .lc1 input {
+        padding: 12px 347px 12px 10px;
+    }
+    .contact .bottomContact .lc form .lc2 textarea {
+        padding: 12px 350px 60px 10px;
+    }
+    .contact .bottomContact .lc form .lc3{
+        text-align: start;
+        margin: 0px 0px 0px 88px;
+    }
+    .contact .bottomContact .lc form .lc3 input {
+        margin: 0px 0px 14px 14px;
+        padding: 12px 60px 12px 60px;
+    }
+    .map{
+        position: relative;
+    }
+    .map iframe{
+        height: 400px;
+    }
+    .map .leftMap {
+        position: absolute;
+        width: 40%;
+        top: 0px;
+        left: -32px;
+        padding: 88px 30px 90px 40px;
+        background: rgba(255, 255, 255, 0.57);
+    }
+    .map .leftMap form input[type="email"] {
+        padding: 14px 0px 14px 10px;
+        margin: 40px 0px 55px 0px;
+        background: none;
+    }
+    .map .leftMap form input[type="submit"] {
+        padding: 12px 54px;
+    }
+    .map .rightMap{
+        position: absolute;
+        width: 40%;
+        top: 0px;
+        right: 0px;
+        text-align: start;
+        padding: 60px 40px 110px 65px;
+        background: rgba(255, 255, 255, 0.57);
+    }
+    footer .topFooter {
+        padding: 35px 0px 20px 0px;
+    }
+    footer .topFooter .leftFooter{
+        width: 20%;
+    }
+    footer .topFooter .leftFooter h2{
+        font-size: 48px;
+    }
+    footer .topFooter .rightFooter{
+        width: 70%;
+    }
+    footer .topFooter .rightFooter ul li a{
+        font-size: 16px;
+    }
+    footer .bottomFooter p{
+        line-height: 2.5;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    header{
+        padding: 5px 0px 0px 10px;
+    }   
+    header .logo {
+        margin: 0px 0px 15px 0px;
+    }
+    header .logo h1 a{
+        font-size: 43px;
+    }
+    header .navigation{
+        margin: 20px 80px 0px 0px;
+    }
+    header .navigation nav ul li{
+        margin: -37px 15px 0px 10px;
+    }
+    header .icons nav{
+        margin: 20px 0px 0px -145px;
+    }
+    header .icons nav ul{
+        margin: 0px 0px 40px 50px;
+    }
+    header .icons nav ul li {
+        margin: 0px 0px 0px 20px;
+    }
+    header .fa-shopping-bag{
+        margin: 55px 0px 0px -62px;
+        transform: rotate(-40deg);
+    }
+    .hero {
+        padding: 215px 15px 100px 15px;
+    }
+    .hero h2 span{
+        font-size: 88px;
+    }
+    .hero p{
+        letter-spacing: 3px;
+        word-spacing: 4px;
+        margin: 5px 32px 12px 32px;
+    }
+    .about {
+        padding: 60px 20px 0px 5px;
+    }
+    .about .leftAbout{
+        width: 38%;
+    }
+    .about .leftAbout button {
+        margin: 5px 0px 0px 0px;
+    }
+    .about .rightAbout{
+        width: 55%;
+    }
+    .about .rightAbout .fig1 {
+        margin: 0px 10px 130px 0px;
+        width: 42%;
+    }
+    .about .rightAbout .fig1 figcaption {
+        top: 108px;
+        left: 30px;
+    }
+    .services {
+        padding: 80px 0px 0px 20px;
+    }
+    .services .leftServices{
+        width: 32%;
+    }
+    .services .leftServices h3 {
+        letter-spacing: 0.8px;
+    }
+    .services .leftServices p {
+        padding: 0px 0px 0px 20px;
+    }
+    .services .rightServices{
+        width: 67%;
+        margin: 0px 0px 110px 10px;
+        padding: 0px 0px 0px 15px;
+    }
+    .models {
+        padding: 90px 30px;
+    }
+    .models .topModels {
+        margin: 0px 0px 35px 0px;
+    }
+    .portfolio{
+        padding: 40px 40px 60px 40px;
+    }
+    .portfolio .bottomPortfolio {
+        margin: 45px 0px 0px 0px;
+    }
+    .portfolio .bottomPortfolio div{
+        width: 24%;
+    }
+    .testimonials {
+        padding: 85px 35px;
+    }
+    .testimonials .bottomTestimonials {
+        padding: 50px 45px 80px 45px;
+    }
+    .testimonials .bottomTestimonials .rt {
+        width: 20%;
+    }
+    .testimonials .bottomTestimonials .lt {
+        width: 76.5%;
+        margin: 0px 0px -24px 0px;
+        padding: 0px 50px 0px 0px;
+    }
+    .contact .topContact{
+        margin: 80px 0px 40px 0px;
+    }
+    .contact .bottomContact{
+        display: flex;
+    }
+    .contact .bottomContact .rc {
+        margin: 0px 0px 0px 70px;
+        width: 33%;
+    }
+    .contact .bottomContact .rc ul li{
+        width: 26%;
+    }
+    .contact .bottomContact .lc{
+        width: 60%;
+    }
+    .contact .bottomContact .lc form {
+        padding: 0px 35px 20px 0px;
+    }
+    .contact .bottomContact .lc form .lc1 input {
+        padding: 12px 65px 12px 10px;
+        margin: 0px 15px 15px 15px;
+    }
+    .contact .bottomContact .lc form .lc3 {
+        margin: 0px 0px 0px 95px;
+    }
+    .map .leftMap {
+        width: 40%;
+        top: 0px;
+        left: -55px;
+        padding: 88px 30px 96px 40px;
+    }
+    .map .leftMap h3{
+        margin: 0px 66px 0px 0px;
+    }
+    .map .leftMap form input[type="email"] {
+        padding: 14px 75px 14px 14px;
+        margin: 40px 0px 50px 35px;
+    }
+    .map .leftMap form input[type="submit"] {
+        padding: 12px 93px;
+        margin: 0px 0px 0px 35px;
+    }
+    .map .rightMap{
+        width: 35%;
+        padding: 60px 40px 68px 65px;
+    }
+    .map .rightMap p {
+        line-height: 2.5;
+    }
+    footer .topFooter .leftFooter {
+        margin: 0px 145px 0px 0px;
+    }
+    footer .topFooter .rightFooter{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width:1440px){
+    header{
+        padding: 5px 0px 0px 35px;
+    }   
+    header .logo {
+        margin: 0px 0px 15px 0px;
+    }
+    header .logo h1 a{
+        font-size: 43px;
+    }
+    header .navigation{
+        margin: 20px 0px 0px 35px;
+    }
+    header .navigation nav ul li{
+        margin: -20px 30px 0px 20px;
+    }
+    header .icons nav{
+        margin: 20px 0px 0px -80px;
+    }
+    header .icons nav ul li{
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+    }
+    header .icons nav ul{
+        margin: 0px 0px 20px 50px;
+    }
+    header .navigation nav ul li {
+        margin: -20px 35px 0px 20px;
+        font-size: 16px;
+    }
+    header .fa-shopping-bag{
+        font-size: 40px;
+        margin: 55px 0px 0px -120px;
+    }
+    .hero {
+        padding: 280px 15px;
+    }
+    .hero h2{
+        letter-spacing: 6px;
+    }
+    .hero h2 span{
+        font-size: 96px;
+    }
+    .hero p{
+        margin: 5px 120px 12px 120px;
+    }
+    .about {
+        padding: 60px 65px 0px 120px;
+    }
+    .about .leftAbout {
+        padding: 0px 10px 58px 25px;
+    }
+    .about .leftAbout h2, .models .topModels h2, .portfolio .topPortfolio h2, .testimonials .topTestimonials h2, .contact .topContact h2{
+        font-size: 48px;
+    }
+    .about .rightAbout {
+        margin: 30px 20px 0px 0px;
+    }
+    .about .rightAbout .fig1 {
+        margin: 0px 10px 70px 0px;
+    }
+    .about .rightAbout .fig1 figcaption {
+        top: 135px;
+        left: 35px;
+    }
+    .about .rightAbout .fig1 figcaption h4{
+        font-size: 40px;
+    }
+    .services .leftServices h2{
+        font-size: 48px;
+        letter-spacing: 6px;
+        line-height: 2;
+    }
+    .services .leftServices h3{
+        font-size: 20px;
+    }
+    .services .leftServices p {
+        padding: 0px 30px 0px 40px;
+    }
+    .services .rightServices {
+        width: 68%;
+        margin: 0px 0px 110px 0px;
+        padding: 0px;
+    }
+    .services .rightServices .rs div i{
+        font-size: 50px;
+    }
+    .services .rightServices .rs div h4{
+        font-size: 20px;
+    }
+    .models .bottomModels {
+        padding: 0px 110px;
+    }
+    .models .bottomModels div {
+        width: 31.5%;
+    }
+    .models {
+        padding: 90px 30px 125px 30px;
+    }
+    .portfolio {
+        padding: 40px 40px 80px 40px;
+    }
+    .portfolio .bottomPortfolio div {
+        width: 24%;
+    }
+    .portfolio .bottomPortfolio {
+        margin: 45px 120px 0px 120px;
+    }
+    .testimonials {
+        padding: 85px 155px;
+    }
+    .testimonials .bottomTestimonials {
+        padding: 50px 45px 50px 45px;
+    }
+    .testimonials .bottomTestimonials .rt {
+        width: 16%;
+    }
+    .testimonials .bottomTestimonials .lt {
+        margin: 0px 50px 0px 0px;
+        padding: 0px 50px 0px 0px;
+    }
+    .contact {
+        padding: 30px 40px 20px 40px;
+    }
+    .contact .bottomContact .rc {
+        margin: 0px 0px 0px 161px;
+        width: 30%;
+    }
+    .contact .bottomContact .lc form .lc1 input {
+        padding: 12px 115px 12px 10px;
+    }
+    .contact .bottomContact .lc form .lc2 textarea {
+        padding: 12px 445px 60px 10px;
+    }
+    .contact .bottomContact .lc form .lc3 {
+        margin: 0px 0px 0px 85px;
+    }
+    .contact .bottomContact .lc form .lc3 input {
+        margin: 0px 8px 14px 6px;
+        padding: 12px 130px 12px 130px;
+    }
+    .map .leftMap {
+        width: 44%;
+        left: -120px;
+    }
+    .map .leftMap form input[type="email"] {
+        padding: 14px 160px 14px 14px;
+        margin: 40px 0px 50px 116px;
+    }
+    .map .leftMap form input[type="submit"] {
+        padding: 12px 135px;
+        margin: 0px 0px 0px 110px;
+    }
+    footer .topFooter .rightFooter {
+        width: 45%;
+    }
+}
